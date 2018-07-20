@@ -7,14 +7,5 @@
   font-size: 1.1rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
 
-.thead {
-  border: 1px solid orangered; }
-
-.tr {
-  border: 1px solid red; }
-
-.th {
-  border: 1px solid green; }
-
-.td {
-  border: 1px solid black; }
+.mid-box {
+  display: inline-flex; }

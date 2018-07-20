@@ -12,50 +12,46 @@ const Album = (props) => {
     <div className="album">
       
       <table>
-                
-        <thead className="thead">
-          <tr className="tr">
-            <td className="td">{data['im:name'].label}</td>
-          </tr>
-        </thead>
+        <tbody>
+        
+        <tr className="title">
+          <td>{data['im:name'].label}</td>
+        </tr>
+        
+        <tr className="mid-box">
+          <td><
+            img src={data['im:image'][1].label} />
+          </td>
 
+          <td>
+            <div>{data.category.attributes.term}</div> 
+            <div>{data['im:artist'].label}</div>
+          </td>
 
+          <td>
+            <div>{data['im:releaseDate'].attributes.label}</div> 
+            <div>{data['im:price'].attributes.amount} {data['im:price'].attributes.currency}</div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <a href={data.link.attributes.href} target="_blank">LINK TO APPLE STORE</a>
+          </td>
+        </tr>
+        
+        </tbody>
       </table>
-      
-      <table>
-       
-      
-        {/* <thead className="thead">
-          <tr className="tr">
-            <td className="td">{data['im:name'].label}</td>
-          </tr>
-        </thead> */}
 
-        <thead className="thead">
-        <tr className="tr">
-          <th className="th"><img src={data['im:image'][1].label} /></th>
-          <td className="td">{data.category.attributes.term}</td>
-          <td className="td">{data['im:artist'].label}</td>
-        </tr>
-      </thead>
 
-      <thead className="thead">
-        <tr className="tr">
-          <td className="td">{data['im:releaseDate'].attributes.label}</td>
-          <td className="td">{data['im:price'].attributes.amount} {data['im:price'].attributes.currency}</td>
-        </tr>
-      </thead>
 
-    </table>
-
-      {/* <div>Genre: {data.category.attributes.term}</div>
-      <div>Artist: {data['im:artist'].label}</div> */}
-      {/* <div>IMAGE: <img src={data['im:image'][1].label} /></div> */}
-      {/* <div>Album Name: {data['im:name'].label}</div>
-      <div>Price: {data['im:price'].attributes.amount} {data['im:price'].attributes.currency}</div>
-      <div>Release Date: {data['im:releaseDate'].attributes.label}</div> */}
-      <a href={data.link.attributes.href} target="_blank">LINK TO APPLE STORE</a>
-
+      {/* <div>{data['im:name'].label}</div> */}
+      {/* <div>{data.category.attributes.term}</div> */}
+      {/* <div>{data['im:artist'].label}</div> */}
+      {/* <div><img src={data['im:image'][1].label} /></div> */}
+      {/* <div>{data['im:price'].attributes.amount} {data['im:price'].attributes.currency}</div>
+      {/* <div>{data['im:releaseDate'].attributes.label}</div> */}
+      {/* <a href={data.link.attributes.href} target="_blank">LINK TO APPLE STORE</a> */}
       {/* <div>MUSIC: {data['im:contentType'].attributes.term}</div> */}
       {/* <div>ALBUM: {data['im:contentType']['im:contentType'].attributes.term}</div> */}
       {/* <div>IMAGE-SML: <img src={data['im:image'][0].label} /></div> */}
