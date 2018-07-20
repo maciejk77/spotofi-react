@@ -3,14 +3,14 @@
   justify-content: center;
   padding: 2rem; }
   .form__input {
-    border: 0.3rem solid orange;
+    border: 0.3rem solid blue;
     height: 2rem;
     width: 15rem; }
   .form__button {
     border: none;
     width: 10rem;
     color: white;
-    background-color: orange;
+    background-color: blue;
     font-size: 1.2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     outline: none; }

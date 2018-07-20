@@ -1,10 +1,28 @@
 @import './variables.scss';
 
-.card {
+.album {
   width: 80%;
   margin: 0 auto;
   border: .2rem solid $theme;
   // border-radius: 2rem;
   padding: .5rem 2rem;
   margin-bottom: .5rem;
+  font-size: $standard-size;
+  font-family: $basic-font;
+}
+
+.thead {
+  border: 1px solid orangered;
+}
+
+.tr {
+  border: 1px solid red;
+}
+
+.th {
+  border: 1px solid green;
+}
+
+.td {
+  border: 1px solid black;
 }
