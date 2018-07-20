@@ -1,12 +1,13 @@
 import React from 'react';
 
 const Album = (props) => {
-  debugger
-  console.log(props);
+  //debugger
+  //console.log(props);
 
   const { data } = props;
  
-  return (  
+  return ( 
+    //if(!props) { return null } 
     <div>
       <div>SOUNDTRACK: {data.category.attributes.term}</div>
       <div>ARTIST: {data['im:artist'].label}</div>
