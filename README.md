@@ -1,7 +1,7 @@
 ## Spotofi React app
 
 ### Project information
-This app is for fictional company called Spotofi which consume itunes API 'Top 100' songs to render information on the screen. The main requirement is to create clean, readable, maintainable code and render [JSON feed data]([JSON feed](https://itunes.apple.com/us/rss/topalbums/limit=100/json) ) to the screen.
+This app is for fictional company called Spotofi which consume itunes API 'Top 100' songs to render information on the screen. The main requirement is to create clean, readable, maintainable code and render [JSON feed data](https://itunes.apple.com/us/rss/topalbums/limit=100/json) ) to the screen.
 
 ### Instruction
 -tbc
