@@ -1,0 +1,10 @@
+@import './variables.scss';
+
+.card {
+  width: 80%;
+  margin: 0 auto;
+  border: .2rem solid $theme;
+  // border-radius: 2rem;
+  padding: .5rem 2rem;
+  margin-bottom: .5rem;
+}
