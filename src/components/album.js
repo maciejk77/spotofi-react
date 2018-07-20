@@ -14,7 +14,7 @@ const Album = (props) => {
       <table>
         <tbody>
         
-        <tr className="title">
+        <tr>
           <td>{data['im:name'].label}</td>
         </tr>
         
@@ -43,7 +43,17 @@ const Album = (props) => {
         </tbody>
       </table>
 
+      {/* 
+      
+      USE the below data to map the into new object
+      on which do Array.Some where values meet search criteria
+      on TITLE, GENRE, ARTIST, RELEASE DATE
 
+      USE filter to show only GENRE, ARTIST, YEAR results => dropdown?
+        
+    
+    
+      */}
 
       {/* <div>{data['im:name'].label}</div> */}
       {/* <div>{data.category.attributes.term}</div> */}
