@@ -4,9 +4,8 @@ import '../styles/album.css';
 class Album extends Component {
 
   render() {
-    const keyword = this.props.keyword.toLowerCase();
 
-    const { data } = this.props;  
+    const { data, keyword } = this.props;  
     // remaping of data to flat object - useful for searches
     let obj = {
       title: data['im:name'].label,
@@ -24,15 +23,16 @@ class Album extends Component {
       type1: data['im:contentType'].attributes.term,
       type2: data['im:contentType']['im:contentType'].attributes.term
     }
+
     // do not render component if there is no match for given keyword
-    if(!obj.title.toLowerCase().includes(keyword)
-        && !obj.genre.toLowerCase().includes(keyword)  
-        && !obj.artist.toLowerCase().includes(keyword) 
-        && !obj.released.toLowerCase().includes(keyword)                 
-      ) { 
-          return null 
-        } 
-    
+    // enables searches on title, genre, artist or date released
+    // refactor to clearner some method?
+    if(!obj.title.toLowerCase().includes(keyword.toLowerCase())
+        && !obj.genre.toLowerCase().includes(keyword.toLowerCase())  
+        && !obj.artist.toLowerCase().includes(keyword.toLowerCase()) 
+        && !obj.released.toLowerCase().includes(keyword.toLowerCase())                 
+      ) { return null } 
+
   return (
       <div className="album">
         
