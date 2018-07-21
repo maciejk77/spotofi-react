@@ -5,8 +5,10 @@ import '../styles/album_list.css';
 class AlbumList extends Component {
 
   render_items() {
-    if(!this.props.keyword) { return null };  
-    return this.props.data.feed.entry.map(item =>
+    if(!this.props.keyword) { return null }; 
+    const data = this.props.data.feed.entry;
+   
+    return data.map(item =>
       <div key={item.id.attributes['im:id']}>
         <Album 
           data={item}

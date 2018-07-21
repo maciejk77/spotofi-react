@@ -31,7 +31,7 @@ class SearchBar extends Component {
         onSubmit={this.handle_submit}
       > 
         <input
-          autocomplete="off"
+          autoComplete="off"
           className="form__input" 
           type="text" 
           name="name"
