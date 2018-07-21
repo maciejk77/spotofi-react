@@ -1,86 +1,70 @@
 @import './variables.scss';
 
 .album {
-  //border: 1px dashed black;
-  width: 19.375rem; // 310px;
-  //width: 90%;
-  margin: 0 auto;
   background-color: $light; 
   border: .4rem solid $theme;
   border-radius: .75rem;
-  padding: .5rem .5rem;
-  margin-bottom: .5rem;
-  font-size: $standard-size;
   font-family: $basic-font;
+  font-size: $standard-size;
+  margin-bottom: .5rem;
+  padding: .5rem .5rem;
+  width: 19.375rem; // 310px;
   margin: .2rem;
+
+  &__title {
+    font-weight: bold;
+    padding: .3rem 0 .3rem 1rem;
+    margin-bottom: .1rem;
+    text-align: center;
+  }
+
+  &__image {
+    display: flex;
+    padding: .1rem;
+  }
 }
 
-.album_wrapper {
-  //border: 2px dotted green;
-  padding: .1rem;
-}
-
-.mid_content_box {
-  //border: 2px solid green;
-  padding: .1rem;
-  display: flex;
-
-}
-
-.top_bar {
-  //border: 2px solid blue;
-  margin-bottom: .1rem;
-  font-weight: bold;
-  padding: .3rem 0 .3rem 1rem;
-  text-align: center;
-}
-
-.left_column {
-  //border: 2px solid red;
-  width: 50%;
+.image {
   margin: 0 .1rem;
+  width: 50%;
+
+  &__item {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    padding: .2rem;
+    margin: 1rem 0;
+  
+    .item {
+      border: .55rem solid $theme2;
+      border-radius: 1.5rem;
+      height: 85%;
+      width: 85%;
+    }
+  }
 }
 
-.img_wrapper {
-  //border: 2px solid blue;
-  padding: .2rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 1rem 0;
-}
-
-.img {
-  border: .55rem solid #3298ef;
-  border-radius: 1.5rem;
-  width: 85%;
-  height: 85%;
-}
-
-.right_column {
-  //border: 2px solid black;
+.album__data {
   width: 100%;
+  
+  .data {
+    text-align: center;
+  
+    &_item {
+      display: flex;
+      justify-content: center;
+      margin: .4rem 0;
+    }
+    
+    &_item--bold {
+      font-weight: bold;
+      padding-bottom: .6rem;
+    }
+  }
 }
 
-.col_group {
-  //border: 1px solid coral;
-  text-align: center;
-}
-
-.col_items {
-  margin: .4rem 0;
-  display: flex;
-  justify-content: center;
-}
-
-.col-items_bold {
-  font-weight: bold;
-  padding-bottom: .6rem;
-}
-
-.bottom_bar {
-  //border: 2px solid yellowgreen;
-  margin-top: .1rem;
+.album__link-price {
   display: flex;
   justify-content: space-around;
+  margin-top: .1rem;
 }

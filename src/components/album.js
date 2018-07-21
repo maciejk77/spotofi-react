@@ -35,32 +35,30 @@ class Album extends Component {
 
   return (
       <div className="album">
-        <div className="album_wrapper">
           
-          <div className="top_bar">{obj.title}</div>
-          
-          <div className="mid_content_box">
-            <div className="left_column">
-              <div className="img_wrapper">
-                <img className="img" src={obj.image_bg} />
-              </div>
-            </div>
-            
-            <div className="right_column">
-              <div className="col_group">
-                <div className="col_item col_item_bold">{obj.genre}</div>
-                <div className="col_item col_item_bold">{obj.artist}</div>
-                <div className="col_item">{obj.released}</div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bottom_bar">
-            <div><a href={obj.link} target="_blank">Go to Apple Store</a></div>
-            <div>{obj.currency === "USD" ? '$' : null}{parseInt(obj.price).toFixed()}</div>
-          </div>
+        <div className="album__title">{obj.title}</div>
         
+        <div className="album__image">      
+          <div className="image">
+            <div className="image__item">
+              <img className="item" src={obj.image_bg} />
+            </div>
+          </div>
+          
+          <div className="album__data">
+            <div className="data">
+              <div className="data_item data_item--bold">{obj.genre}</div>
+              <div className="data_item data_item--bold">{obj.artist}</div>
+              <div className="data_item">{obj.released}</div>
+            </div>
+          </div>
         </div>
+        
+        <div className="album__link-price">
+          <div><a href={obj.link} target="_blank">Go to Apple Store</a></div>
+          <div>{obj.currency === "USD" ? '$' : null}{parseInt(obj.price).toFixed()}</div>
+        </div>
+        
       </div>
     )
   }

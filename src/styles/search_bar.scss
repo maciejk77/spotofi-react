@@ -7,22 +7,23 @@
 
   &__input {
     border: .5rem solid $theme;
-    height: 2rem;
-    width: 15rem;
-    font-size: 1.2rem;
-    padding: .3rem 1.5rem;
     border-radius: 2rem;
+    font-size: 1.2rem;
+    height: 2rem;
     outline: none;
+    padding: .3rem 1.5rem;
+    width: 15rem;
   }
 
   &__button {
-    border: none;
-    width: 10rem;
-    color: $light;
     background-color: $theme;
+    border: none;
+    color: $light;
     font-size: 1.2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: $basic-font;
+    font-size: 1.2rem;
     outline: none;
+    width: 10rem;
   }
 
 }

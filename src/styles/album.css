@@ -1,61 +1,50 @@
 .album {
-  width: 19.375rem;
-  margin: 0 auto;
   background-color: #fff;
   border: 0.4rem solid #004cf8;
   border-radius: .75rem;
-  padding: .5rem .5rem;
-  margin-bottom: .5rem;
-  font-size: 1.1rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  padding: .5rem .5rem;
+  width: 19.375rem;
   margin: .2rem; }
+  .album__title {
+    font-weight: bold;
+    padding: .3rem 0 .3rem 1rem;
+    margin-bottom: .1rem;
+    text-align: center; }
+  .album__image {
+    display: flex;
+    padding: .1rem; }
 
-.album_wrapper {
-  padding: .1rem; }
+.image {
+  margin: 0 .1rem;
+  width: 50%; }
+  .image__item {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    padding: .2rem;
+    margin: 1rem 0; }
+    .image__item .item {
+      border: 0.55rem solid #3298ef;
+      border-radius: 1.5rem;
+      height: 85%;
+      width: 85%; }
 
-.mid_content_box {
-  padding: .1rem;
-  display: flex; }
-
-.top_bar {
-  margin-bottom: .1rem;
-  font-weight: bold;
-  padding: .3rem 0 .3rem 1rem;
-  text-align: center; }
-
-.left_column {
-  width: 50%;
-  margin: 0 .1rem; }
-
-.img_wrapper {
-  padding: .2rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 1rem 0; }
-
-.img {
-  border: .55rem solid #3298ef;
-  border-radius: 1.5rem;
-  width: 85%;
-  height: 85%; }
-
-.right_column {
+.album__data {
   width: 100%; }
+  .album__data .data {
+    text-align: center; }
+    .album__data .data_item {
+      display: flex;
+      justify-content: center;
+      margin: .4rem 0; }
+    .album__data .data_item--bold {
+      font-weight: bold;
+      padding-bottom: .6rem; }
 
-.col_group {
-  text-align: center; }
-
-.col_items {
-  margin: .4rem 0;
+.album__link-price {
   display: flex;
-  justify-content: center; }
-
-.col-items_bold {
-  font-weight: bold;
-  padding-bottom: .6rem; }
-
-.bottom_bar {
-  margin-top: .1rem;
-  display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-top: .1rem; }
