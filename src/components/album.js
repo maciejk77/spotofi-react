@@ -35,11 +35,11 @@ class Album extends Component {
 
   return (
       <div className="album">
-        <div className="wrapper">
+        <div className="album_wrapper">
           
-          <div className="title_bar">{obj.title}</div>
+          <div className="top_bar">{obj.title}</div>
           
-          <div className="column_group">
+          <div className="mid_content_box">
             <div className="left_column">
               <div className="img_wrapper">
                 <img className="img" src={obj.image_bg} />
@@ -48,14 +48,14 @@ class Album extends Component {
             
             <div className="right_column">
               <div className="col_group">
-                <div className="col_items col-items_bold">{obj.genre}</div>
-                <div className="col_items col-items_bold">{obj.artist}</div>
-                <div className="col_items">{obj.released}</div>
+                <div className="col_item col_item_bold">{obj.genre}</div>
+                <div className="col_item col_item_bold">{obj.artist}</div>
+                <div className="col_item">{obj.released}</div>
               </div>
             </div>
           </div>
           
-          <div className="link-price_bar">
+          <div className="bottom_bar">
             <div><a href={obj.link} target="_blank">Go to Apple Store</a></div>
             <div>{obj.currency === "USD" ? '$' : null}{parseInt(obj.price).toFixed()}</div>
           </div>

@@ -15,19 +15,19 @@
   margin: .2rem;
 }
 
-.wrapper {
+.album_wrapper {
   //border: 2px dotted green;
   padding: .1rem;
 }
 
-.column_group {
+.mid_content_box {
   //border: 2px solid green;
   padding: .1rem;
   display: flex;
 
 }
 
-.title_bar {
+.top_bar {
   //border: 2px solid blue;
   margin-bottom: .1rem;
   font-weight: bold;
@@ -78,7 +78,7 @@
   padding-bottom: .6rem;
 }
 
-.link-price_bar {
+.bottom_bar {
   //border: 2px solid yellowgreen;
   margin-top: .1rem;
   display: flex;
