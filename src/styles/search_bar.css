@@ -5,7 +5,10 @@
   .form__input {
     border: 0.3rem solid blue;
     height: 2rem;
-    width: 15rem; }
+    width: 15rem;
+    font-size: 1.2rem;
+    padding: .1rem .5rem;
+    outline: none; }
   .form__button {
     border: none;
     width: 10rem;

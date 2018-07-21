@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/search_bar.css';
+import AlbumList from './album_list.js';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -18,12 +19,12 @@ class SearchBar extends Component {
 
   handle_submit(event) {
     event.preventDefault();
-    console.log(this.props.data.feed.entry[0]);
     this.setState({ name: ''});
   }
 
   render() {
     return (
+    <div>
     <div>
       <form 
         className="form" 
@@ -36,12 +37,13 @@ class SearchBar extends Component {
           value={this.state.name} 
           onChange={this.handle_change}
         />
-        <button 
-          className="form__button" 
-          type="submit">CHECK
-        </button>        
       </form>
-    </div>   
+    </div> 
+    <AlbumList 
+      data={this.props.data} 
+      keyword={this.state.name}
+    />
+    </div>  
     )
   }
 }

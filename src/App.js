@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import SearchBar from './components/search_bar';
-import AlbumList from './components/album_list';
+// import AlbumList from './components/album_list';
 
 const url = 'https://itunes.apple.com/us/rss/topalbums/limit=100/json';
 
@@ -10,7 +10,7 @@ class App extends Component {
     super(props);
   
     this.state = {
-      data: null
+      data: null,
     }
   }
 
@@ -25,8 +25,9 @@ class App extends Component {
     return (
       <div>
         <div className="logo"><img /></div>
-        <SearchBar data={this.state.data} />
-        <AlbumList data={this.state.data} />
+        <SearchBar 
+          data={this.state.data}
+        />
       </div>
     );
   }
