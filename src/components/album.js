@@ -39,54 +39,25 @@ class Album extends Component {
           <div className="title_bar">{obj.title}</div>
           <div className="column_group">
             <div className="left_column">
-              <div><img src={obj.image_md} /></div>
+              <div className="img_wrapper"><img className="img" src={obj.image_md} /></div>
    
             </div>
             <div className="right_column">
-              <div className="col_items">{obj.genre}</div>
-              <div className="col_items">{obj.artist}</div>
-              <div className="col_items">{obj.released}</div>
+              <div className="col_group">
+                <div className="col_items col-items_bold">{obj.genre}</div>
+                <div className="col_items col-items_bold">{obj.artist}</div>
+                <div className="col_items">{obj.released}</div>
+              </div>
             </div>
           </div>
           <div className="link-price_bar">
             <div><a href={obj.link} target="_blank">Go to Apple Store</a></div>
-            <div>{obj.currency === "USD" ? '$' : null}{parseInt(obj.price).toFixed(2)}</div>
+            <div>{obj.currency === "USD" ? '$' : null}{parseInt(obj.price).toFixed()}</div>
           </div>
         </div>
-        {/* <table className="al_table">
-          <tbody className="al_tbody">
-          
-          <tr className="al_tr">
-            <td className="al_td">{obj.title}</td>
-          </tr>
-          
-          <tr className="mid-box">
-            <td>
-              <img src={obj.image_md} />
-            </td>
-
-            <td className="al_td">
-              <div>{obj.genre}</div> 
-              <div>{obj.artist}</div>
-            </td>
-
-            <td className="al_td">
-              <div>{obj.released}</div> 
-              <div>{obj.price} {obj.currency}</div>
-            </td>
-          </tr>
-          
-          <tr className="al_tr">
-            <td className="al_td">
-              <a href={obj.link} target="_blank">LINK TO APPLE STORE</a>
-            </td>
-          </tr>
-          
-          </tbody>
-        </table> */}
-
-        {/* 
         
+        {/*
+
         USE the below data to map the into new object
         on which do Array.Some where values meet search criteria
         on TITLE, GENRE, ARTIST, RELEASE DATE
@@ -94,6 +65,7 @@ class Album extends Component {
         USE filter to show only GENRE, ARTIST, YEAR results => dropdown?
           
         */}
+
       </div>
     )
   }
