@@ -36,12 +36,16 @@ class Album extends Component {
   return (
       <div className="album">
         <div className="wrapper">
+          
           <div className="title_bar">{obj.title}</div>
+          
           <div className="column_group">
             <div className="left_column">
-              <div className="img_wrapper"><img className="img" src={obj.image_md} /></div>
-   
+              <div className="img_wrapper">
+                <img className="img" src={obj.image_bg} />
+              </div>
             </div>
+            
             <div className="right_column">
               <div className="col_group">
                 <div className="col_items col-items_bold">{obj.genre}</div>
@@ -50,22 +54,13 @@ class Album extends Component {
               </div>
             </div>
           </div>
+          
           <div className="link-price_bar">
             <div><a href={obj.link} target="_blank">Go to Apple Store</a></div>
             <div>{obj.currency === "USD" ? '$' : null}{parseInt(obj.price).toFixed()}</div>
           </div>
-        </div>
         
-        {/*
-
-        USE the below data to map the into new object
-        on which do Array.Some where values meet search criteria
-        on TITLE, GENRE, ARTIST, RELEASE DATE
-
-        USE filter to show only GENRE, ARTIST, YEAR results => dropdown?
-          
-        */}
-
+        </div>
       </div>
     )
   }

@@ -1,6 +1,7 @@
 @import './variables.scss';
 
 .album {
+  //border: 1px dashed black;
   width: 19.375rem; // 310px;
   //width: 90%;
   margin: 0 auto;
@@ -11,7 +12,7 @@
   margin-bottom: .5rem;
   font-size: $standard-size;
   font-family: $basic-font;
-  //border: 1px dashed black;
+  margin: .2rem;
 }
 
 .wrapper {
@@ -31,6 +32,7 @@
   margin-bottom: .1rem;
   font-weight: bold;
   padding: .3rem 0 .3rem 1rem;
+  text-align: center;
 }
 
 .left_column {
@@ -49,8 +51,10 @@
 }
 
 .img {
-  border: 1.2rem solid #3298ef;
+  border: .55rem solid #3298ef;
   border-radius: 1.5rem;
+  width: 85%;
+  height: 85%;
 }
 
 .right_column {
