@@ -1,11 +1,44 @@
 .album {
   width: 80%;
   margin: 0 auto;
-  border: 0.2rem solid blue;
+  background-color: #fff;
+  border: 0.4rem solid #004cf8;
+  border-radius: 1.5rem;
   padding: .5rem 2rem;
   margin-bottom: .5rem;
   font-size: 1.1rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: 1px dashed black; }
 
-.mid-box {
-  display: inline-flex; }
+.wrapper {
+  border: 2px dotted green;
+  padding: .1rem; }
+
+.column_group {
+  border: 2px solid green;
+  padding: .1rem;
+  display: flex; }
+
+.title_bar {
+  border: 2px solid blue;
+  margin-bottom: .1rem; }
+
+.left_column {
+  border: 2px solid red;
+  width: 50%;
+  margin: 0 .1rem; }
+
+.right_column {
+  border: 2px solid black;
+  width: 100%; }
+
+.col_items {
+  margin: .4rem 0;
+  display: flex;
+  justify-content: center; }
+
+.link-price_bar {
+  border: 2px solid yellowgreen;
+  margin-top: .1rem;
+  display: flex;
+  justify-content: space-around; }

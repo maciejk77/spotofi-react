@@ -1,7 +1,8 @@
 .logo {
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url('./img/logo.png');
+  background-image: url('./img/logo2.png');
+  background-color: $theme;
   width: 20rem;
   height: 5.5rem;
   margin: 4rem auto .2rem;

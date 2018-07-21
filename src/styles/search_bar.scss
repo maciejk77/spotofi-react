@@ -3,11 +3,10 @@
 .form {
   display: flex;
   justify-content: center;
-  padding: 2rem;
-  
+  padding: 1.5rem 0 4rem 0;
+
   &__input {
-    //border: 1px solid orange;
-    border: .3rem solid $theme;
+    border: .5rem solid $theme;
     height: 2rem;
     width: 15rem;
     font-size: 1.2rem;
@@ -17,7 +16,6 @@
   }
 
   &__button {
-    //border: 1px solid green;
     border: none;
     width: 10rem;
     color: $light;

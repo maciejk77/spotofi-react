@@ -1,9 +1,9 @@
 .form {
   display: flex;
   justify-content: center;
-  padding: 2rem; }
+  padding: 1.5rem 0 4rem 0; }
   .form__input {
-    border: 0.3rem solid blue;
+    border: 0.5rem solid #004cf8;
     height: 2rem;
     width: 15rem;
     font-size: 1.2rem;
@@ -13,8 +13,8 @@
   .form__button {
     border: none;
     width: 10rem;
-    color: white;
-    background-color: blue;
+    color: #fff;
+    background-color: #004cf8;
     font-size: 1.2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     outline: none; }
