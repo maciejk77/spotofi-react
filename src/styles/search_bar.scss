@@ -8,7 +8,9 @@
   &__input {
     border: .5rem solid $theme;
     border-radius: 2rem;
+    color: $theme;
     font-size: 1.6rem;
+    font-weight: bold;
     height: 4rem;
     outline: none;
     padding: .3rem 1.5rem .3rem 3.5rem;

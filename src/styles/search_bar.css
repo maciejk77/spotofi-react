@@ -5,7 +5,9 @@
   .form__input {
     border: 0.5rem solid #004cf8;
     border-radius: 2rem;
+    color: #004cf8;
     font-size: 1.6rem;
+    font-weight: bold;
     height: 4rem;
     outline: none;
     padding: .3rem 1.5rem .3rem 3.5rem;
