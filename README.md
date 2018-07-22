@@ -15,7 +15,7 @@ This app is for fictional company called Spotofi which consume itunes API 'Top 1
 - used ***node-sass-chokidar*** to transpile Sass to CSS on build, ***watch-css*** to transpile while developing
 - clean, readable, maintainable code ...I hope ;)
 - VCS with Git obviously ;)
-- Up to 100 albums are being rendered depending on search query, will pick up the string and match with JSON feed data
+- Up to 100 albums are being rendered depending on search query, a string must be included in JSON feed data
 - imported search glyphicon
 - App deloyed to Heroku, [access Spotofi live app here](https://spotofi.herokuapp.com/)
 
