@@ -17,7 +17,7 @@ This app is for fictional company called Spotofi which consume itunes API 'Top 1
 - VCS with Git obviously ;)
 - Up to 100 albums are being rendered depending on search query, a string must be included in JSON feed data
 - imported search glyphicon
-- App deloyed to Heroku, [access Spotofi live app here](https://spotofi.herokuapp.com/)
+- App deloyed to Heroku
 
 ### To do / ideas
 - toggle to sort results in ascending/descending order?
@@ -27,4 +27,5 @@ This app is for fictional company called Spotofi which consume itunes API 'Top 1
 - refactor search method to cleaner .some()
 
 ### Screenshot
+[Click here to Spotofi app deployed to Heroku](https://spotofi.herokuapp.com/)
 ![Screenshot](public/screenshot.png)
