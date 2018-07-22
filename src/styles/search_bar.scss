@@ -8,11 +8,11 @@
   &__input {
     border: .5rem solid $theme;
     border-radius: 2rem;
-    font-size: 1.2rem;
-    height: 2rem;
+    font-size: 1.6rem;
+    height: 4rem;
     outline: none;
-    padding: .3rem 1.5rem;
-    width: 15rem;
+    padding: .3rem 1.5rem .3rem 3.5rem;
+    width: 25rem;
   }
 
   &__button {
@@ -26,4 +26,11 @@
     width: 10rem;
   }
 
+}
+
+.search_glyphicon {
+  color: $theme;
+  left: 3rem;
+  top: 1.2rem;
+  font-size: 1.75rem;
 }

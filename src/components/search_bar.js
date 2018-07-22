@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/search_bar.css';
 import AlbumList from './album_list.js';
+import { Glyphicon } from 'react-bootstrap';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -25,11 +26,12 @@ class SearchBar extends Component {
   render() {
     return (
     <div>
-    <div>
+    <div style={{backgroundColor: '#3298ef'}}>
       <form 
         className="form" 
         onSubmit={this.handle_submit}
-      > 
+      >
+        <Glyphicon glyph="search" className="search_glyphicon" />
         <input
           autoComplete="off"
           className="form__input" 
