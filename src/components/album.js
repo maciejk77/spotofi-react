@@ -23,7 +23,6 @@ class Album extends Component {
       type1: data['im:contentType'].attributes.term,
       type2: data['im:contentType']['im:contentType'].attributes.term
     }
-
     // do not render component if there is no match for given keyword
     // enables searches on title, genre, artist or date released
     // refactor to clearner some method?
@@ -32,8 +31,8 @@ class Album extends Component {
         && !obj.artist.toLowerCase().includes(keyword.toLowerCase()) 
         && !obj.released.toLowerCase().includes(keyword.toLowerCase())                 
       ) { return null } 
-
-  return (
+      
+    return (
       <div className="album">
           
         <div className="album__title">{obj.title}</div>
@@ -41,7 +40,7 @@ class Album extends Component {
         <div className="album__image">      
           <div className="image">
             <div className="image__item">
-              <img className="item" src={obj.image_bg} />
+              <img className="item" src={obj.image_bg} alt="" />
             </div>
           </div>
           
@@ -56,7 +55,7 @@ class Album extends Component {
         
         <div className="album__link-price">
           <div><a href={obj.link} target="_blank">Go to Apple Store</a></div>
-          <div>{obj.currency === "USD" ? '$' : null}{parseInt(obj.price).toFixed()}</div>
+          <div>{obj.currency === "USD" ? '$' : null}{parseInt(obj.price, 10).toFixed()}</div>
         </div>
         
       </div>

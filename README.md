@@ -16,6 +16,7 @@ This app is for fictional company called Spotofi which consume itunes API 'Top 1
 - clean, readable, maintainable code ...I hope ;)
 - VCS with Git obviously ;)
 - Up to 100 albums are being rendered depending on search query, will pick up the string and match with JSON feed data
+- imported search glyphicon
 - App deloyed to Heroku, [access Spotofi live app here](https://spotofi.herokuapp.com/)
 
 ### To do / ideas
@@ -23,7 +24,6 @@ This app is for fictional company called Spotofi which consume itunes API 'Top 1
 - toggle to render a grid of big images (album covers) only
 - CSS animations?
 - Bootstrap/Reactstrap for responsivness
-- add search glyphicon to search box
 - refactor search method to cleaner .some()
 
 ### Screenshot

@@ -24,7 +24,7 @@ class App extends Component {
     if(!this.state.data) { return null }
     return (
       <div style={{backgroundColor: '#3298ef'}}>
-        <div className="logo"><img /></div>
+        <div className="logo"><img alt="" /></div>
         <SearchBar 
           data={this.state.data}
         />
