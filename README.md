@@ -27,5 +27,5 @@ This app is for fictional company called Spotofi which consume itunes API 'Top 1
 - refactor search method to cleaner .some()
 
 ### Screenshot
-[***Click here to see Spotofi app deployed to Heroku***](https://spotofi.herokuapp.com/)
+[***Click here to see Spotofi app live***](https://spotofi.herokuapp.com/)
 ![Screenshot](public/screenshot.png)
